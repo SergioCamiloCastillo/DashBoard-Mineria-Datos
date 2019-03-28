@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My chart </title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Numeric JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+</head>
+
+<body>
+    <div id="myDiv" width="1500" height="450"></div>
+    <script>
+        document.getElementById('button').addEventListener('click', enviar);
+        function enviar(){
+            alert("llego hijuputas");
+        }
+    </script>
+
+    <script>
+        var data = [{
+            values: [19, 26, 100],
+            labels: ['Residential', 'Non-Residential', 'Utility'],
+            type: 'pie'
+        }];
+
+        var layout = {
+            height: 400,
+            width: 500
+        };
+        var options = {
+            title: {
+                text: "Hola"
+            }
+        }
+
+        Plotly.newPlot('myDiv', data, layout, options);
+    </script>
+    <div id="myDiv1"></div>
+    <script>
+        var data = [
+            {
+                x: ['giraffes', 'orangutans', 'monkeys'],
+                y: [20, 14, 23],
+                type: 'bar'
+            }
+        ];
+        var layout = {
+            height: 400,
+            width: 500,
+            title: "Hola hijueputas"
+        };
+
+        Plotly.newPlot('myDiv1', data, layout);
+    </script>
+
+
+</body>
+
+</html>

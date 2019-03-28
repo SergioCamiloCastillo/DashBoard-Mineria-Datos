@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My chart </title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Numeric JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+</head>
+
+<body>
+
+
+    <form id="form1" method="post" action="" name="form1">
+        <input type="checkbox" id="calculoDiferencial" name="vehicle" value="Calculo Diferencial"> Calculo
+        diferencial<br>
+        <input type="checkbox" id="programacionBasica" name="vehicle" value="Programacion Basica"> Programacion
+        basica<br>
+        <input type="checkbox" id="fisicaMecanica" name="vehicle" value="Fisica Mecanica"> Fisica mecanica<br>
+
+        <button type='button' id='button'>Enviar</button>
+
+        <script src='controlador.js'></script>
+    </form>
+
+    <div id="myDiv1" width="1500" height="450"></div>
+    <div id="myDiv" width="1500" height="450"></div>
+
+
+
+</body>
+
+</html>
