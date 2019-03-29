@@ -14,6 +14,7 @@ function enviar() {
         if ((document.form1[i].type == 'checkbox') && (document.form1[i].checked == true)) {
 
             arr.push(document.form1[i].value);
+           
 
 
         }
@@ -34,9 +35,44 @@ function enviar() {
         }
 
     }
-    alert("Hubieron " + contt + " coincidencias");
+    var data = [{
+        values: [cont, 64 - cont],
+        labels: ["Aprobo", "No aprobo"],
+        type: 'pie'
+    }];
 
+    var layout = {
+        height: 400,
+        width: 500,
+        title: "Porcentaje de materias aprobadas Antiguo pensum"
+    };
+    var options = {
+        title: {
+            text: "Hola"
+        }
+    }
 
+    Plotly.newPlot('myDiv1', data, layout, options);
+    var data2 = [{
+        values: [contt, 3 - contt],
+        labels: ["Aprobo", "No aprobo"],
+        type: 'pie'
+    }];
+
+    var layout2 = {
+        height: 400,
+        width: 500,
+        title: "Porcentaje de materias aprobadas Nuevo pensum"
+
+    };
+    var options2 = {
+        title: {
+            text: "Hola"
+        }
+    }
+
+    Plotly.newPlot('myDiv2', data2, layout2, options2);
+    
     var data = [
         {
             x: arr,
@@ -50,25 +86,14 @@ function enviar() {
         title: "Hola hijueputas"
     };
 
-    Plotly.newPlot('myDiv', data, layout);
+    Plotly.newPlot('myDiv3', data, layout);
 
-    var data = [{
-        values: [cont, 3 - cont],
-        labels: ["Aprobo", "No aprobo"],
-        type: 'pie'
-    }];
 
-    var layout = {
-        height: 400,
-        width: 500
-    };
-    var options = {
-        title: {
-            text: "Hola"
-        }
-    }
 
-    Plotly.newPlot('myDiv1', data, layout, options);
+
+
+   
+
 
 
 }
