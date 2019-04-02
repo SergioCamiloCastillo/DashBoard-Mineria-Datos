@@ -1,21 +1,22 @@
 
 #myDiv1{
     float:left;
+    margin-right: 200px;
 }
 #myDiv2{
     float: right;
+    margin-left: 100px;
 }
 #myDiv3{
-    width: 5000;
-    height: 2000;
-    margin-left: 400px;
+    
+    margin-left: 200px;
     margin-right:200px;
     margin-bottom: 200px;
 }
 #myDiv4{
     float:left;
+    
+    margin-bottom: 60px;
 }
-#myDiv{
-    float:right;
-}
+
 
