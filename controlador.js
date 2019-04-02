@@ -111,7 +111,7 @@ console.log(arr2);
 
     var data = new google.visualization.DataTable();
     data.addColumn('string');
-    data.addColumn('string', 'Materias');
+    data.addColumn('string', 'Materias por aprobar del nuevo pensum');
 
     data.addRows([
         ["Materias faltantes", myJson]
@@ -124,7 +124,7 @@ console.log(arr2);
 
     var table = new google.visualization.Table(document.getElementById('myDiv3'));
 
-    table.draw(data, { width: 1000, height: 200 });
+    table.draw(data, { width: 1500, height: 400 });
 
 
 
