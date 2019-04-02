@@ -11,310 +11,411 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
     <link REL=StyleSheet href="posicion.css" TYPE="text/css" MEDIA=screen>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
-<body>
-    <h1>Selecciona las materias que ha aprobado</h1>
+<body class="grey lighten-4">
+    <nav class="light-blue lighten-1" role="navigation" img="uniminuto.png">
+        <div class="nav-wrapper container"><a id="logo-container" img="uniminuto.png" class="brand-logo"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html"><img id="icono" src="uniminuto.png" width="200" height="70"></a></li>
+            </ul>
 
 
-    <form id="form1" method="post" action="" name="form1">
+        </div>
+    </nav>
+
+
+
+    <form id="form1" method="post" action="" name="form1" class="blue-text text-darken-2">
+        <h4>Selecciona las materias que ha aprobado: </h4></br>
         <label class="checkbox-inline">
-            <input type="checkbox" id="GBI" name="GBI" value="GBI"> GBI
+            <input type="checkbox" id="GBI" name="GBI" value="GBI"><span class="black-text text-darken-2"> GBI </span>
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="CEPLEC1" name="CEPLEC1" value="CEPLEC 1"> CEPLEC I</label>
+            <input type="checkbox" id="CEPLEC1" name="CEPLEC1" value="CEPLEC 1"><span class="black-text text-darken-2">
+                CEPLEC I </span>
+        </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="precalculo" name="precalculo" value="Precalculo"> Precalculo
+            <input type="checkbox" id="precalculo" name="precalculo" value="Precalculo"> <span
+                class="black-text text-darken-2"> Precalculo
+            </span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="proyectoVida" name="proyectoVida" value="Proyecto de Vida"> Proyecto de vida
+            <input type="checkbox" id="proyectoVida" name="proyectoVida" value="Proyecto de Vida"><span
+                class="black-text text-darken-2">
+                Proyecto de
+                vida </span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="introduccionIngenieria" name="introduccionIngenieria"
-                value="Introduccion Ingenieria"> Introduccion a la Ingenieria
+                value="Introduccion Ingenieria"><span class="black-text text-darken-2"> Introduccion a la Ingenieria
+            </span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="programacionBasica" name="programacionBasica" value="Programacion Basica">
-            Programacion basica
+            <span class="black-text text-darken-2">Programacion basica</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="electronicaDigital" name="electronicaDigital" value="Electronia Digital">
-            Electronica Digital</br>
+            <span class="black-text text-darken-2">Electronica Digital</span></br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="ingles1" name="ingles1" value="Ingles 1"> Ingles 1
+            <input type="checkbox" id="ingles1" name="ingles1" value="Ingles 1"><span class="black-text text-darken-2">
+                Ingles 1</span>
         </label>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="CEPLEC2" name="CEPLEC2" value="CEPLEC 2"> CEPLEC 2
+            <input type="checkbox" id="CEPLEC2" name="CEPLEC2" value="CEPLEC 2"><span
+                class="black-text text-darken-2">CEPLEC 2</span>
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="calculoDiferencial" name="calculoDiferencial" value="Calculo Diferencial">
-            Calculo Diferencial</label>
+            <span class="black-text text-darken-2">Calculo Diferencial</span></label>
         <label class="checkbox-inline">
             <input type="checkbox" id="metodologiaInformacion" name="metodologiaInformacion"
-                value="Metodologia de la informacion"> Metodologia de la informacion
+                value="Metodologia de la informacion"><span class="black-text text-darken-2">Metodologia de la
+                informacion</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="catedraMinuto" name="catedraMinuto" value="Categra Minuto de Dios"> Catedra
-            Minuto de Dios
+            <input type="checkbox" id="catedraMinuto" name="catedraMinuto" value="Categra Minuto de Dios"><span
+                class="black-text text-darken-2">Catedra
+                Minuto de Dios</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="fundamentoEstructuraDatos" name="fundamentoEstructuraDatos"
-                value="Fundamentos de estructura de datos"> Fundamentos de estructura de datos
+                value="Fundamentos de estructura de datos"><span class="black-text text-darken-2">Fundamentos de
+                estructura de datos</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="fundamentosPOO" name="fundamentosPOO" value="Fundamentos POO"> Fundamentos
-            POO</br>
+            <input type="checkbox" id="fundamentosPOO" name="fundamentosPOO" value="Fundamentos POO"><span
+                class="black-text text-darken-2">Fundamentos
+                POO</span> </br>
 
         </label>
 
         <label class="checkbox-inline">
-            <input type="checkbox" id="ingles2" name="ingles2" value="Ingles 2"> Ingles 2
+            <input type="checkbox" id="ingles2" name="ingles2" value="Ingles 2"><span
+                class="black-text text-darken-2">Ingles 2</span>
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="calculoIntegral" name="calculoIntegral" value="Calculo Integral"> Calculo
-            Integral
+            <input type="checkbox" id="calculoIntegral" name="calculoIntegral" value="Calculo Integral"><span
+                class="black-text text-darken-2">Calculo
+                Integral</span>
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="algebraLineal" name="algebraLineal" value="Algebra Lineal"> Algebra Lineal
+            <input type="checkbox" id="algebraLineal" name="algebraLineal" value="Algebra Lineal"><span
+                class="black-text text-darken-2">
+                Algebra
+                Lineal</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="emprendimiento" name="emprendimiento" value="Emprendimiento"> Emprendimiento
+            <input type="checkbox" id="emprendimiento" name="emprendimiento" value="Emprendimiento"><span
+                class="black-text text-darken-2">Emprendimiento</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="estructuraDatos" name="estructuraDatos" value="Estructura de Datos"> Estructura
-            de datos
+            <input type="checkbox" id="estructuraDatos" name="estructuraDatos" value="Estructura de Datos"><span
+                class="black-text text-darken-2">Estructura
+                de datos</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="programacionOrientadoObjetos" name="programacionOrientadoObjetos"
-                value="Programacion Orientado a Objetos"> Programacion orientado a objetos
+                value="Programacion Orientado a Objetos"><span class="black-text text-darken-2">Programacion orientado a
+                objetos</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="arquitecturaComputadores" name="arquitecturaComputadores"
-                value="Arquitectura de computadores"> Arquitectura de computadores</br>
+                value="Arquitectura de computadores"><span class="black-text text-darken-2">Arquitectura de
+                computadores</span> </br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="ingles3" name="ingles3" value="Ingles 3"> Ingles 3</label>
+            <input type="checkbox" id="ingles3" name="ingles3" value="Ingles 3"><span
+                class="black-text text-darken-2">Ingles 3</span>
+        </label>
 
 
         <label class="checkbox-inline">
-            <input type="checkbox" id="geometria" name="geometria" value="Geometria"> Geometria
+            <input type="checkbox" id="geometria" name="geometria" value="Geometria"><span
+                class="black-text text-darken-2">Geometria</span>
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="practicaSocial" name="practicaSocial" value="Practica Respondabilidad social"> Practica
-            Social</label>
+            <input type="checkbox" id="practicaSocial" name="practicaSocial" value="Practica Respondabilidad social">
+            <span class="black-text text-darken-2">Practica Social</span>
+        </label>
         <label class="checkbox-inline">
 
             <input type="checkbox" id="tecnicasModelamientoSoftware" name="tecnicasModelamientoSoftware"
-                value="Tecnicas de modelamiento de software"> Tecnicas de modelamiento de software
+                value="Tecnicas de modelamiento de software"><span class="black-text text-darken-2">Tecnicas de
+                modelamiento de
+                software</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCP1180" name="electivaCP1180" value="Electiva CP 263"> Electiva CP 1180
+            <input type="checkbox" id="electivaCP1180" name="electivaCP1180" value="Electiva CP 263"><span
+                class="black-text text-darken-2">Electiva CP
+                1180</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="redesComputadores" name="redesComputadores" value="Redes de computadores"> Redes
-            de computadores</br>
+            <input type="checkbox" id="redesComputadores" name="redesComputadores" value="Redes de computadores"><span
+                class="black-text text-darken-2">Redes
+                de computadores</span> </br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="fisicaMecanica" name="vehicle" value="Fisica Mecanica"> Fisica mecanica
+            <input type="checkbox" id="fisicaMecanica" name="vehicle" value="Fisica Mecanica"><span class="black-text text-darken-2">Fisica
+                mecanica</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="ingenieriaSoftware" name="ingenieriaSoftware" value="Ingenieria de Software">
-            Ingenieria de Sotware
+            <input type="checkbox" id="ingenieriaSoftware" name="ingenieriaSoftware"
+                value="Ingenieria de Software"><span class="black-text text-darken-2">Ingenieria de Sotware</span>
+
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="basesDatos" name="basesDatos" value="Bases de Datos"> Bases de Datos</label>
+            <input type="checkbox" id="basesDatos" name="basesDatos" value="Bases de Datos"><span
+                class="black-text text-darken-2">Bases de
+                Datos</span>
+        </label>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="fundamentosProgramacionWeb" name="fundamentosProgramacionWeb"
-                value="Fundamentos Programacio web"> Fundamentos programacion web
+                value="Fundamentos Programacio web"><span class="black-text text-darken-2">Fundamentos programacion
+                web</span>
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="sistemasOperativos" name="sistemasOperativos" value="Sistemas Operativos">
-            Sistemas Operativos</label>
-
-        <input type="checkbox" id="electivaCPC1040" name="electivaCPC1040" value="Electiva CPC 1040"> Electiva CPC
-        1040</br>
-
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" id="fisicaElectrica" name="fisicaElectrica" value="Fisica Electrica"> Fisica
-            Electrica
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" id="planNegocios" name="planNegocios" value="Plan de Negocios"> Plan de negocios
+            <span class="black-text text-darken-2">Sistemas Operativos</span></label>
+        <label>
+            <input type="checkbox" id="electivaCPC1040" name="electivaCPC1040" value="Electiva CPC 1040"><span
+                class="black-text text-darken-2">Electiva
+                CPC 1040</span>
+            </br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="programacionWeb" name="programacionWeb" value="Programacion Web"> Programacion
-            web
+            <input type="checkbox" id="fisicaElectrica" name="fisicaElectrica" value="Fisica Electrica"><span
+                class="black-text text-darken-2">Fisica
+                Electrica</span>
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="planNegocios" name="planNegocios" value="Plan de Negocios"><span
+                class="black-text text-darken-2">Plan
+                de
+                negocios</span>
 
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="programacionWeb" name="programacionWeb" value="Programacion Web"><span
+                class="black-text text-darken-2">Programacion
+                web
+            </span>
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="probabilidadEstadistica" name="probabilidadEstadistica"
-                value="Probabilidad y Estadistica"> Probabilidad y Estadistica
+                value="Probabilidad y Estadistica"><span class="black-text text-darken-2">Probabilidad y
+                Estadistica</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCPC1390" name="electivaCPC1390" value="Electiva CPC 044"> Electiva CPC
-            1390
+            <input type="checkbox" id="electivaCPC1390" name="electivaCPC1390" value="Electiva CPC 044"><span
+                class="black-text text-darken-2">Electiva
+                CPC
+                1390</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCPC1030" name="electivaCPC1030" value="Electiva CPC 014"> Electiva CPC
-            1030 </br></label>
+            <input type="checkbox" id="electivaCPC1030" name="electivaCPC1030" value="Electiva CPC 014"><span
+                class="black-text text-darken-2">Electiva
+                CPC 1030</span>
+            </br></label>
 
 
 
         <label class="checkbox-inline">
-            <input type="checkbox" id="matematicasDicretas" name="matematicasDicretas" value="Matematica Discreta">
-            Matematicas Discretas</label>
-
-        <input type="checkbox" id="desarrolloSocialContemporaneo" name="desarrolloSocialContemporaneo"
-            value="Desarrollo Social Contemporaneo"> Desarrollo Social Contemporaneo
+            <input type="checkbox" id="matematicasDicretas" name="matematicasDicretas" value="Matematica Discreta"><span
+                class="black-text text-darken-2"> Matematicas Discretas</span>
+        </label>
+        <label>
+            <input type="checkbox" id="desarrolloSocialContemporaneo" name="desarrolloSocialContemporaneo"
+                value="Desarrollo Social Contemporaneo"><span class="black-text text-darken-2">Desarrollo Social
+                Contemporaneo</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="seminarioInvestigacionTecnologica" name="seminarioInvestigacionTecnologica"
-                value="Seminario Investigacion Tecnologica"> Seminario Investigacion Tecnologica
+                value="Seminario Investigacion Tecnologica"><span class="black-text text-darken-2">
+                Seminario Investigacion Tecnologica</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="Diseño de software" name="Diseño de software" value="Diseño de software"> Diseño
-            de software
-
+            <input type="checkbox" id="Diseño de software" name="Diseño de software" value="Diseño de software"><span
+                class="black-text text-darken-2">Diseño
+                de software
+            </span>
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="interconectividad" name="interconectividad" value="Interconectividad">
-            Interconectividad
+            <span class="black-text text-darken-2">Interconectividad</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="Ingenieria Economica" name="Ingenieria Economica" value="Ingenieria Economica">
-            Ingenieria Economica
+            <span class="black-text text-darken-2">Ingenieria Economica</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCPC1380" name="electivaCPC1380" value="Electiva CPC 024"> Electiva CPC
-            1380</label></br>
+            <input type="checkbox" id="electivaCPC1380" name="electivaCPC1380" value="Electiva CPC 024"><span
+                class="black-text text-darken-2">Electiva
+                CPC
+                1380</span class="black-text text-darken-2"> </label></br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCMD1070" name="electivaCMD1070" value="Electiva CMD 022"> Electica CMD
-            1070
+            <input type="checkbox" id="electivaCMD1070" name="electivaCMD1070" value="Electiva CMD 022"><span
+                class="black-text text-darken-2">Electica
+                CMD 1070</span>
+
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="seminarioInvestigacionIngenieria" name="seminarioInvestigacionIngenieria"
-                value="Seminario Investigacion a la Ingenieria"> Seminario Investigacion a la Ingenieria</label>
+                value="Seminario Investigacion a la Ingenieria"><span class="black-text text-darken-2"> Seminario
+                Investigacion a la
+                Ingenieria</span></label>
         <label class="checkbox-inline">
             <input type="checkbox" id="investigacionOperaciones" name="investigacionOperaciones"
-                value="Investigacion de Operaciones"> Investigacion de Operaciones
+                value="Investigacion de Operaciones"><span class="black-text text-darken-2">Investigacion de
+                Operaciones</span>
 
         </label>
-        <input type="checkbox" id="arquitecturaSoftware" name="arquitecturaSoftware" value="Arquitectura de Software">
-        Arquitectura de software
+        <label>
+            <input type="checkbox" id="arquitecturaSoftware" name="arquitecturaSoftware"
+                value="Arquitectura de Software">
+            <span class="black-text text-darken-2">Arquitectura de software</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="estructuraInternetServiciosServidores"
                 name="estructuraInternetServiciosServidores" value="Estructura de internet, servicios y servidores">
-            Estructura de internet, servicios y servidores
+            <span class="black-text text-darken-2">Estructura de internet, servicios y servidores</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="practicaProfesional" name="practicaProfesional" value="Practica Profesional">
-            Practica Profesional</br>
+            <span class="black-text text-darken-2">Practica Profesional</span></br>
 
         </label>
 
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCPC1050" name="electivaCPC1050" value="Electiva CPC 034"> Electiva CPC
-            1050
+            <input type="checkbox" id="electivaCPC1050" name="electivaCPC1050" value="Electiva CPC 034"><span
+                class="black-text text-darken-2">Electiva
+                CPC
+                1050</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivCP1190" name="electivaCP1190" value="Electiva CP 093"> Electiva CP
-            1190</label></br>
+            <input type="checkbox" id="electivCP1190" name="electivaCP1190" value="Electiva CP 093"><span
+                class="black-text text-darken-2">Electiva CP
+                1190</span> </label></br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="teoriaComputacion" name="teoriaComputacion" value="Teoria de la Computacion"> Teoria de
-            la Computacion
+            <input type="checkbox" id="teoriaComputacion" name="teoriaComputacion" value="Teoria de la Computacion">
+            <span class="black-text text-darken-2">Teoria de la Computacion</span>
+
+
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="pruevasValidacionyVerificacionSoftware"
                 name="pruevasValidacionyVerificacionSoftware" value="Pruebas Validacion y verificacion de software">
-            Pruebas Validacion y verificacion de software</label>
+            <span class="black-text text-darken-2">Pruebas Validacion y verificacion de software</span></label>
         <label class="checkbox-inline">
 
             <input type="checkbox" id="programacionIntegrada" name="programacionIntegrada"
-                value="Programacion Integrada y tecnologias web">Programacion Integrada y tecnologias web
+                value="Programacion Integrada y tecnologias web"><span class="black-text text-darken-2">Programacion
+                Integrada y tecnologias
+                web</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="practicaProfesional" name="practicaProfesional" value="Practica Profesional">
-            Practica Profesional</br>
+            <span class="black-text text-darken-2">Practica Profesional</span></br>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCMD1080" name="electivaCMD1080" value="Electiva CMD 032"> Electiva CMD
-            1080
+            <input type="checkbox" id="electivaCMD1080" name="electivaCMD1080" value="Electiva CMD 032"><span
+                class="black-text text-darken-2">Electiva
+                CMD 1080</span>
+
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCP1200" name="electivaCP1200" value="Electiva CP 183"> Electiva CP 1200
+            <input type="checkbox" id="electivaCP1200" name="electivaCP1200" value="Electiva CP 183"><span
+                class="black-text text-darken-2">Electiva CP
+                1200</span>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="simulacion" name="simulacion" value="Simulacion"> Simulacion
+            <input type="checkbox" id="simulacion" name="simulacion" value="Simulacion"><span
+                class="black-text text-darken-2">Simulacion</span>
 
         </label>
         <label class="checkbox-inline">
             <input type="checkbox" id="Gestion de proyectos informaticos" name="Gestion de proyectos informaticos"
-                value="Gestion de proyectos informaticos"> Gestion de proyectos informaticos</label>
+                value="Gestion de proyectos informaticos"><span class="black-text text-darken-2">
+                Gestion de proyectos informaticos</span></label>
 
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="opcionGrado" name="opcionGrado" value="Opcion de Grado"> Opcion de grado
+            <input type="checkbox" id="opcionGrado" name="opcionGrado" value="Opcion de Grado"><span
+                class="black-text text-darken-2">Opcion
+                de
+                grado</span>
         </label>
         <label class="checkbox-inline">
-            <input type="checkbox" id="electivaCPC1060" name="electivaCPC1060" value="EleCtiva CPC 054"> Electiva CPC
-            1060</br></label>
+            <input type="checkbox" id="electivaCPC1060" name="electivaCPC1060" value="EleCtiva CPC 054"><span
+                class="black-text text-darken-2">Electiva
+                CPC
+                1060</span> </br></label>
 
 
 
-
-        <button type='button' id='button'>Enviar</button>
+        </br>
+        <button type='button' id='button' class="waves-effect waves-light btn">Enviar</button></br></br>
 
         <script src='controlador.js'></script>
     </form>
 
     <div id="myDiv1" width="1500" height="450"></div>
     <div id="myDiv2" width="1000" height="450"></div>
+</br></br>
     <div id="myDiv3" width="2000" height="450"></div>
-    <div id="myDiv4" width="1500" height="450"></div>
 
+    <div id="myDiv4" width="1500" height="450"></div>
+    <div id="myDiv5" width="1500" height="450"></div>
+
+   
 
 
 

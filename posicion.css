@@ -6,17 +6,36 @@
 #myDiv2{
     float: right;
     margin-left: 100px;
+    margin-bottom: 100px;
 }
 #myDiv3{
-    
+    margin-top: 200px;
     margin-left: 200px;
     margin-right:200px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    
 }
 #myDiv4{
-    float:left;
     
-    margin-bottom: 60px;
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right:200px;
+    margin-bottom: 100px;
+    
 }
+#form1{
+    margin: 10px;
+    font-size: inherit;
+}
+#icono{
+    
+    margin-bottom: 200px;
+}
+#container{
+    width: 100%;
+    height: 100px;
+    
+}
+
 
 

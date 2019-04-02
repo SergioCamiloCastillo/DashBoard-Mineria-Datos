@@ -10,7 +10,7 @@ function enviar() {
     cont = 0;
     var contt; //Variable que lleva la cuenta de los checkbox pulsados
     contt = 0;
-    var arr = [];
+    var  arr = [];
     for (i = 0; i < document.form1.elements.length; i++) {
         if ((document.form1[i].type == 'checkbox') && (document.form1[i].checked == true)) {
 
@@ -51,8 +51,6 @@ function enviar() {
     }
 
 
-
-
     var data = [{
         values: [cont, 64 - cont],
         labels: ["Aprobo", "No aprobo"],
@@ -75,8 +73,8 @@ function enviar() {
         values: [contt, 64 - contt],
         labels: ["Aprobo", "No aprobo"],
         type: 'pie',
-        marker:{
-            colors:"#512DA8"
+        marker: {
+            colors: "#512DA8"
         }
     }];
 
@@ -84,8 +82,8 @@ function enviar() {
         height: 400,
         width: 500,
         title: "Porcentaje de materias aprobadas Nuevo pensum",
-        marker:{
-            color:"#512DA8"
+        marker: {
+            color: "#512DA8"
         }
     };
     var options2 = {
@@ -115,10 +113,10 @@ function enviar() {
         y: [arr.length],
         name: 'Numero materias aprobadas Antiguo Pensum',
         type: 'bar',
-        marker:{
-            color:"#7D3C98  "
+        marker: {
+            color: "#FF0000  "
         },
-        width:[0.6]
+        width: [0.6]
     };
 
     var trace2 = {
@@ -126,19 +124,21 @@ function enviar() {
         y: [contt],
         name: 'Numero materias aprobadas Nuevo Pensum',
         type: 'bar',
-        marker:{
-            color:"#000099"
+        marker: {
+            color: "#000099"
         },
-        width:[0.6]
+        width: [0.6]
     };
 
     var data = [trace1, trace2];
 
-    var layout = { barmode: 'stack', title: "Comparacion Numero de materias ambos Pensum",height: 400,
-    width: 500 };
+    var layout = {
+        barmode: 'stack', title: "Comparacion Numero de materias ambos Pensum", height: 400,
+        width: 500
+    };
 
     Plotly.newPlot('myDiv4', data, layout);
-
+    
     var myJson = JSON.stringify(arr2);
 
     myJson = myJson.replace(/["']/g, "\n\r");
@@ -169,5 +169,7 @@ function enviar() {
 
 
 google.charts.load('current', { 'packages': ['table'] });
+
+
 
 
