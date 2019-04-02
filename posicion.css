@@ -3,10 +3,14 @@
     float:left;
 }
 #myDiv2{
-    float: right;;
+    float: right;
 }
 #myDiv3{
-    float:right;
+    width: 5000;
+    height: 2000;
+    margin-left: 400px;
+    margin-right:200px;
+    margin-bottom: 200px;
 }
 #myDiv4{
     float:left;
@@ -14,5 +18,4 @@
 #myDiv{
     float:right;
 }
-
 
